@@ -66,18 +66,11 @@ Import URL format: [official desktop deep-link reference](https://learn.chatgpt.
 
 任务运行时，悟空会拿红色金箍棒演练一套短功夫：起势、横架、举棒、下劈、前刺，再回到起势。这套动作已包含在导入精灵表中。
 
-### 趴睡呼吸
+### 趴睡预览
 
 ![悟空趴睡预览](sleeping-preview.gif)
 
 悟空趴在地上休息，轻轻呼吸。
-
-| 预览 | 文件 |
-| --- | --- |
-| 耍棒动作帧 | [running-kungfu-frames.png](running-kungfu-frames.png) |
-| 趴睡呼吸帧 | [sleeping-frames.png](sleeping-frames.png) |
-| 耍棒循环 | [running-kungfu-preview.gif](running-kungfu-preview.gif) |
-| 趴睡循环 | [sleeping-preview.gif](sleeping-preview.gif) |
 
 ## Wukong's animations
 
@@ -91,7 +84,7 @@ Import URL format: [official desktop deep-link reference](https://learn.chatgpt.
 
 While a task is running, Wukong practices a short red-staff routine. It is included in the import sprite sheet.
 
-### Sleeping
+### Sleeping preview
 
 ![Wukong sleeping on the ground](sleeping-preview.gif)
 
