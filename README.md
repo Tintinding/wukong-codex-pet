@@ -33,6 +33,8 @@ GitHub 可能不会把 `codex://` 显示为可点击链接，因此请复制整�
 | [wukong-32px.png](wukong-32px.png) | 每帧 32×32 的逻辑像素原图，供查看和编辑 |
 | [all-states.gif](all-states.gif) | 9 种动画状态的连续预览 |
 | [idle.gif](idle.gif) | 待机动画预览 |
+| [running-kungfu-preview.gif](running-kungfu-preview.gif) | 任务运行时的耍棒功夫 |
+| [sleeping-preview.gif](sleeping-preview.gif) | 趴睡呼吸动作预览（五分钟计时未接通） |
 | [contact-sheet.png](contact-sheet.png) | 动作与视线方向总览 |
 | [install-wukong.url](install-wukong.url) | Windows 导入快捷方式 |
 | [SHA256SUMS.txt](SHA256SUMS.txt) | 导入精灵表的 SHA-256 校验值 |
@@ -43,7 +45,7 @@ GitHub 可能不会把 `codex://` 显示为可点击链接，因此请复制整�
 
 ## English import guide
 
-Wukong is a Monkey King inspired companion with 32×32 logical pixel frames, nine animation states and sixteen look directions. Description: **俺老孙来也~！**
+Wukong is a Monkey King inspired companion with 32×32 logical pixel frames, nine animation states and sixteen look directions. The running animation now shows a red-staff kungfu routine; the five-minute idle sleep timer is not connected. Description: **俺老孙来也~！**
 
 Copy the full `codex://pets/install` link above into your browser address bar. Allow the browser to open the Codex desktop app, review the pet and complete the import. Then select Wukong in your pet settings if needed. On Windows, you can also download and open `install-wukong.url`.
 
@@ -52,15 +54,15 @@ Use `wukong-v2.png` for import. The smaller `wukong-32px.png` is the logical pix
 Import URL format: [official desktop deep-link reference](https://learn.chatgpt.com/docs/reference/commands). Artwork created with the Pets workflow and image generation, then assembled and validated as a v2 sprite sheet.
 
 
-## 新动作设计：耍棒与趴睡
+## 新动作：任务中耍棒，闲时趴睡
 
 ![悟空耍金箍棒预览](running-kungfu-preview.gif)
 
-任务运行时，悟空拿红色金箍棒演练一套短功夫：起势、横架、举棒、下劈、前刺，再回到起势。动作按 32×32 逻辑像素绘制，可用于 `running` 动画状态。
+任务运行时，悟空会拿红色金箍棒演练一套短功夫：起势、横架、举棒、下劈、前刺，再回到起势。耍棒动作已写入导入精灵表的 `running` 动画行。
 
 ![悟空趴睡预览](sleeping-preview.gif)
 
-连续 5 分钟没有任务运行后，预期切换为趴在地上的睡觉动作，并轻轻呼吸。当前 Codex 宠物支持按任务状态展示动画，但没有提供“空闲满 5 分钟后切换动画”的计时设置。因此睡觉动画目前作为独立预览设计，五分钟自动切换尚未接入；本仓库现有导入精灵表也保持原样，导入后不会自动出现这两组新动作。
+趴睡动作表现悟空贴地休息、轻轻呼吸。Codex 当前没有“空闲满 5 分钟后切换动画”的计时设置，因此五分钟自动切换尚未接通；趴睡目前作为独立预览保留，待机状态仍使用原动作。
 
 | 预览 | 文件 |
 | --- | --- |
@@ -69,12 +71,12 @@ Import URL format: [official desktop deep-link reference](https://learn.chatgpt.
 | 耍棒循环 | [running-kungfu-preview.gif](running-kungfu-preview.gif) |
 | 趴睡循环 | [sleeping-preview.gif](sleeping-preview.gif) |
 
-## New action designs
+## New actions: staff practice and sleeping
 
 ![Wukong practicing with the red staff](running-kungfu-preview.gif)
 
-While a task is running, Wukong practices a short staff routine: ready stance, guard, lift, downward strike, forward thrust, and recovery. The animation uses 32×32 logical pixels and is designed for the `running` animation state.
+When a task is running, Wukong practices a short staff routine: ready stance, guard, lift, downward strike, forward thrust, then recovery. The staff animation is included in the imported sprite sheet's `running` row.
 
 ![Wukong sleeping on the ground](sleeping-preview.gif)
 
-The intended behavior is to switch to a prone sleeping animation with gentle breathing after five minutes without a running task. Codex Pets currently supports animations tied to task states, but does not expose a five-minute idle timer setting. The sleep animation is therefore a standalone preview design; automatic switching is not connected, and the import sprite sheet in this repository remains unchanged. Importing it will not add these actions yet.
+The sleeping animation shows Wukong resting on the ground with gentle breathing. Codex currently does not expose a timer to switch animations after five idle minutes, so that automatic transition is not connected yet. The sleep animation remains a standalone preview, and the existing idle animation is retained.
